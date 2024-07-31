@@ -65,6 +65,8 @@ public class Reservation
         while (i<=checkoutDay){
             tempPrice= room.calculatePrice()*temp[i-1];
             totalPrice += tempPrice;
+            System.out.println("HERE1");
+            i++;
         }
         switch (discountCode)   {
             case "I_WORK_HERE":
@@ -86,7 +88,7 @@ public class Reservation
                 break;
         }
 
-
+        System.out.println("HERE");
         return totalPrice;
     }
 

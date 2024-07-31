@@ -86,7 +86,7 @@ public class Owner {
                     if (50 - setRow < setRoom) {
                         System.out.println("Invalid Number Entered. Please Try Again.");
                     } else {
-                        char roomLetter = 'U'; // start with letter A
+                        char roomLetter = 'Q'; // start with letter A
                         for (int i = 0; i < setRoom; i++) {
                             int roomNumber = i % 10 + 1; // room number 1-10
                             String roomName = roomLetter + "" + roomNumber; // create room name
@@ -114,7 +114,7 @@ public class Owner {
                     if (50 - setRow - setRoom2 < setRoom2) {
                         System.out.println("Invalid Number Entered. Please Try Again.");
                     } else {
-                        char roomLetter = 'X'; // start with letter A
+                        char roomLetter = 'V'; // start with letter A
                         for (int i = 0; i < setRoom2; i++) {
                             int roomNumber = i % 10 + 1; // room number 1-10
                             String roomName = roomLetter + "" + roomNumber; // create room name
@@ -814,31 +814,7 @@ public class Owner {
                                 break;
                             }
                         }
-                    /*
-                    int checkOutTime;
-                    while (true) {
-                        System.out.println("Enter the Check out Time (1-12):");
-                        checkOutTime = sc.nextInt();
-                        if (checkOutTime >= 1 && checkOutTime <= 12) {
-                            sc.nextLine();
-                            break;
-                        } else {
-                            System.out.println("Invalid Check out Time. Please enter a time between 1 and 12.");
-                            sc.nextLine();
-                        }
-                    }
-
-                    String checkOutString;
-                    while (true) {
-                        System.out.println("Enter the Check out Time (AM/PM):");
-                        checkOutString = sc.nextLine();
-                        if (checkOutString.equalsIgnoreCase("am") || checkOutString.equalsIgnoreCase("pm")) {
-                            break;
-                        } else {
-                            System.out.println("Invalid Check out Time. Please enter AM or PM.");
-                        }
-                    }
-                     */sc.nextLine();
+                        sc.nextLine();
                         System.out.println("Kindly Enter Your Name:");
                         String guestName = sc.nextLine();
 
